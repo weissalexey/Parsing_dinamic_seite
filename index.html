@@ -1,0 +1,30 @@
+<pre>[Bitrix\Main\DB\ConnectionException] 
+Mysql connect error [localhost]: (1040) Too many connections (400)
+/home/bitrix/www/bitrix/modules/main/lib/db/mysqliconnection.php:65
+#0: Bitrix\Main\DB\MysqliConnection-&gt;connectInternal()
+	/home/bitrix/www/bitrix/modules/main/lib/db/mysqliconnection.php:123
+#1: Bitrix\Main\DB\MysqliConnection-&gt;queryInternal(string, array, NULL)
+	/home/bitrix/www/bitrix/modules/main/lib/db/connection.php:332
+#2: Bitrix\Main\DB\Connection-&gt;query(string)
+	/home/bitrix/www/bitrix/modules/main/lib/config/option.php:150
+#3: Bitrix\Main\Config\Option::load(string, NULL)
+	/home/bitrix/www/bitrix/modules/main/lib/config/option.php:36
+#4: Bitrix\Main\Config\Option::get(string, string, string)
+	/home/bitrix/www/bitrix/modules/main/lib/httprequest.php:323
+#5: Bitrix\Main\HttpRequest-&gt;prepareCookie(array)
+	/home/bitrix/www/bitrix/modules/main/lib/httprequest.php:63
+#6: Bitrix\Main\HttpRequest-&gt;__construct(object, array, array, array, array)
+	/home/bitrix/www/bitrix/modules/main/lib/httpapplication.php:43
+#7: Bitrix\Main\HttpApplication-&gt;initializeContext(array)
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:122
+#8: Bitrix\Main\Application-&gt;initializeExtendedKernel(array)
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#9: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:14
+#10: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog.php:11
+#11: require_once(string)
+	/home/bitrix/www/bitrix/header.php:4
+#12: require(string)
+	/home/bitrix/www/edindex/index.php:3
+</pre>
